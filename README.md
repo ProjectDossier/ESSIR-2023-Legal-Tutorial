@@ -2,17 +2,9 @@
 
 ## Task definition:
 
-Given a query, identify relevant statutes. 
+The task of statute retrieval aims to identify the relevant statutes (i.e., candidate document) given a short description of a legal situation (i.e., query).
+Our corpus is a set of 2,914 statutes, and out of them, there are 197 satutes that are relevant to at least one or more queries. Each statute (candidate document) contain a title and description.
 
-**Each query,** is a short description of a legal situation
-
-**Each candidate document**, is a statute (Section of Act) from Indian law. 
-
-Therefore, our corpus is a set of statuse that act as candidate document. There is in total 2,914 statutes as our 
-
-There is a set of 197 statutes (Sections of Acts) from Indian law which build our document collection corpus.
-
-, that are relevant to some of the queries. The title and description of these statutes are provided. For each query, the task is to identify the most relevant statutes (from among the 197 statutes).
 ## Motivation
 In countries following the Common Law system (e.g., India, UK, Canada, Australia, and many others), there are two primary sources of law
 
