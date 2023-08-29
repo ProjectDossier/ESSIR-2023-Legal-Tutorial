@@ -37,6 +37,10 @@ While working on a new case a legal practitioner often relies on these statutes 
 
 
 ### Evaluation Script
+
+#### Effectiveness of MiniLM-MSMARCO-V2 on the test set
+
+We evaluate the MiniLM trained on MS MARCO on our test set. Since the number of judged set of Aila is only 197 queries, we do no train 
 ---
 
 ## Large language models as few-shot re-rankers for statute retrieval
