@@ -3,7 +3,6 @@
 ## Task definition:
 
 The task of statute retrieval aims to identify the relevant statutes (i.e., candidate document) given a short description of a legal situation (i.e., query).
-Our corpus is a set of 2,914 statutes, and out of them, there are 197 satutes that are relevant to at least one or more queries. Each statute (candidate document) contain a title and description.
 
 ## Motivation
 In countries following the Common Law system (e.g., India, UK, Canada, Australia, and many others), there are two primary sources of law
@@ -40,7 +39,7 @@ While working on a new case a legal practitioner often relies on these statutes 
 
 #### Effectiveness of MiniLM-MSMARCO-V2 on the test set
 
-We evaluate the MiniLM trained on MS MARCO on our test set. Since the number of judged set of Aila is only 197 queries, we do no train 
----
+We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation set
 
+---
 ## Large language models as few-shot re-rankers for statute retrieval
