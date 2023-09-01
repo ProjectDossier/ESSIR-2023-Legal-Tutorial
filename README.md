@@ -1,31 +1,47 @@
 # Official respository for Legal Tutorial in The 14th European Summer School on Information Retrieval
 
+Welcome to the Statute Retrieval Tutorial! In this tutorial, we will delve into the world of legal information retrieval, specifically focusing on the identification of relevant statutes given a brief description of a legal situation. This task is crucial for legal practitioners, as it enables them to access the written laws that may apply to their cases. We explore this subject in more detail in the following.
+
 ## Task definition:
 
-The task of statute retrieval aims to identify the relevant statutes (i.e., candidate document) given a short description of a legal situation (i.e., query).
+The primary objective of statute retrieval is to identify the relevant statutes (from the candidate documents) based on a concise description of a legal scenario (query).
 
 ## Motivation
-In countries following the Common Law system (e.g., India, UK, Canada, Australia, and many others), there are two primary sources of law
+In countries that adhere to the Common Law system (e.g., India, UK, Canada, Australia, and many others), two main sources of law exist:
 
         1. Statutes which are the written laws
         2. Precedents or judgements of prior cases delivered by a court, which involve similar legal facts and issues are the current case, but are not directly indicated in the written law
 
-While working on a new case a legal practitioner often relies on these statutes and precedents to understand how the Court has discussed, argued and behaved in similar scenarios. This task is aimed at creating retrieval systems capable of addressing this problem
+Legal practitioners frequently rely on statutes and precedents when working on new cases. These resources help them understand how the court has discussed, argued and decided similar scenarios. Our tutorial aims to provide preliminary information on developing retrieval systems that can address this critical need.
+
+
 
 ## Dataset
-We use the Artificial Intelligence for Legal Assistance (AILA) dataset, and focus on Task 1 - Precedent & Statute retrieval. AiILA is a series of shared tasks aimed at developing datasets and methods for solving variety of legal informatics problems.
-  
-To be more specific, we focus on TASK 1B, titled "Identifying relevant statutes" in a mutlti-stage setup. For first stage retrieval, we explore BM25 and Splade and for re-ranking on the top-k candidates retrieved by firs stage retriever, we use Large language models with few-shot in-context reasoninig where the number of training size is only two instance and we also fine-tune cross-encoders where the number of queries for training is 40 queries. We evaluate the re-ranker on ten qureies from the validation.
 
-It is noteworthy to mention that our setup in cross-encoder re-ranking could be more fair if we had a sepearte test dataset. However, here, our objective is teaching students to implement and train mentioned methods.
+For this tutorial, we leverage the Artificial Intelligence for Legal Assistance (AILA) dataset, specifically focusing on Task 1 - Precedent & Statute retrieval. AILA encompasses a series of shared tasks designed to create datasets and methods for solving various legal informatics challenges.
+
+To be more precise, we concentrate on TASK 1B, titled "Identifying relevant statutes," in a multi-stage setup. In the initial stage of retrieval, we explore BM25 and Splade. For re-ranking the top-k candidates retrieved by the first-stage retriever, we employ large language models (LLMs) with few-shot in-context reasoning with only two training instances, and fine-tuned cross-encoders with 40 training queries. We evaluate the re-ranker using ten queries from the validation set.
+
+It is important to note that while a separate test dataset would make our cross-encoder re-ranking setup more robust, our primary goal here is to teach students how to implement and train these methods effectively.
 
 ## Tutorial plan
 
-We started our tutorial with an introduction to legal IR that presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/). Next, we practically investigated implementation of first stage retrievers (i.e., BM25 and Splade) that taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/), and its implementation is available on "first_stage_retrievers" folders. Finally, in the afternoon session, [Arian Askari](https://www.linkedin.com/ /arian-askari/) presented how to fine-tune and evaluate cross-encoder reranker. In the era of LLMs, he then investigated how LLMs, particularly FLAN-T5 is able to address the task of re-ranking statues given legal question with only few-shot provided examples. The implementation of reranking stage is available on "llms_transformers_rerankers" folder.
+Our tutorial is divided into several informative sessions:
 
-The slides of the presentation is available on "presentation" folder. 
+        1. Introduction to Legal Information Retrieval: Presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/), this session provides an overview of legal information retrieval.
+        
+        2. First Stage Retrievers (BM25 and Splade): Taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/, this session explores the implementation and usage of first stage retrievers, with code available in the "first_stage_retrievers" folder.
+        
+        3. Cross-Encoder Re-ranking: In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively re-rank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
 
-All of our tutorial could be run with Google Colab without access to premium account.
+       
+Notes:
+
+- You can check ut othe presentation slides in the "presentation" folder.
+
+- All of our tutorial could be run with Google Colab without access to premium account.
+
+
 <!--- 
 # Retrieval
 
