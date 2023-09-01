@@ -87,10 +87,10 @@ Here is an overview of the evaluation metrics for the different retrieval method
 | Methode                           | Backbone      | P@1 | P@5 | P@10 | recall@10 | recall@100 | Map@100 |
 |-----------------------------------|---------------|-----|-----|------|-----------|------------|---------|
 | BM25                              | Elasticsearch | .1200   |  .0480   |  .0380   |     .0860      |     .4373       |     .0605    |
-| Splade                            | BERT          |     |     |      |           |            |         |
-| BM25 + Cross-encoder (fine-tuned) | LegalBERT          |  .5000   |  .1800   |  .1200    |       0.2733    |    0.3783        |     .1918    |
+| Splade                            | BERT          |  .1400   |  .0880   |   .0700   |     .1667      |        .7257    |    .1060     |
+| BM25 + Cross-encoder (fine-tuned) | LegalBERT          |  .5000   |  .1800   |  .1200    |       .2733    |    --       |     --    |
 
-BM25 + LLM few-shot reranker (Flan-T5): Try your prompt on [statute reranking notebook](https://github.com/ProjectDossier/ESSIR-2023-Legal-Tutorial/blob/main/llms_transformers_rerankers/solutions/3_statute_reranking_with_LLMs_solution.ipynb)  :)
+BM25 + LLM few-shot reranker (Flan-T5): We encourage you to desing and test your prompt using the [statute reranking notebook](https://github.com/ProjectDossier/ESSIR-2023-Legal-Tutorial/blob/main/llms_transformers_rerankers/solutions/3_statute_reranking_with_LLMs_solution.ipynb). Feel free to contact Arian Askari, <a.askari@liacs.leidenuniv.nl> ,if you had any question/interest regarding further analyzing LLMs in legal domain.
 
  
 # Organizers
