@@ -1,4 +1,4 @@
-# essir-legal
+# Official respository for Legal Tutorial in The 14th European Summer School on Information Retrieval
 
 ## Task definition:
 
@@ -19,7 +19,12 @@ To be more specific, we focus on TASK 1B, titled "Identifying relevant statutes"
 
 It is noteworthy to mention that our setup in cross-encoder re-ranking could be more fair if we had a sepearte test dataset. However, here, our objective is teaching students to implement and train mentioned methods.
 
+## Tutorail plan
+
+We started with an introduction to legal IR that presented by Sophia 
+
 # Retrieval
+
 ## First stage Retrieval
 
 ### BM25 
@@ -63,3 +68,14 @@ We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation
 | Splade                            | BERT          |     |     |      |           |            |         |
 | BM25 + Cross-encoder (fine-tuned) | BERT          |     |     |      |           |            |         |
 | BM25 + LLM few-shot reranker      | Flan-T5       |     |     |      |           |            |         |
+
+
+# Organizers
+
+[Arian Askari](https://www.linkedin.com/in/arian-askari/), PhD candiate from Leiden University
+
+[Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/), PhD candidate from Tu Wien
+
+[Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/), PhD candidate from Tu Wien
+
+[Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/),  PhD candidate from Tu Wien
