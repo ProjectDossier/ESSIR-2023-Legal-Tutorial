@@ -101,4 +101,6 @@ BM25 + LLM few-shot reranker (Flan-T5): We encourage you to desing and test your
 
 [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/), PhD candidate from Tu Wien
 
+[Amin Abolghasemi](https://www.linkedin.com/in/amin-abolghasemi/), PhD candidate from Leiden University
+
 [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/),  PhD candidate from Tu Wien
