@@ -19,16 +19,16 @@ Legal practitioners frequently rely on statutes and precedents when working on n
 
 For this tutorial, we leverage the Artificial Intelligence for Legal Assistance (AILA) dataset, specifically focusing on Task 1 - Precedent & Statute retrieval. AILA encompasses a series of shared tasks designed to create datasets and methods for solving various legal informatics challenges.
 
-To be more precise, we concentrate on TASK 1B, titled "Identifying relevant statutes," in a multi-stage setup. In the initial stage of retrieval, we explore BM25 and Splade. For re-ranking the top-k candidates retrieved by the first-stage retriever, we employ large language models (LLMs) with few-shot in-context reasoning with only two training instances, and fine-tuned cross-encoders with 40 training queries. We evaluate the re-ranker using ten queries from the validation set.
+To be more precise, we concentrate on TASK 1B, titled "Identifying relevant statutes," in a multi-stage setup. In the initial stage of retrieval, we explore BM25 and Splade. For reranking the top-k candidates retrieved by the first-stage retriever, we employ large language models (LLMs) with few-shot in-context reasoning with only two training instances, and fine-tuned cross-encoders with 40 training queries. We evaluate the reranker using ten queries from the validation set.
 
-It is important to note that while a separate test dataset would make our cross-encoder re-ranking setup more robust, our primary goal here is to teach students how to implement and train these methods effectively.
+It is important to note that while a separate test dataset would make our cross-encoder reranking setup more robust, our primary goal here is to teach students how to implement and train these methods effectively.
 
 ## Tutorial plan
 
 Our tutorial is divided into several informative sessions:
 1. **Introduction to Legal Information Retrieval**: Presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/), this session provides an overview of legal information retrieval.        
 2. **First Stage Retrievers** (BM25 and Splade): Taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/, this session explores the implementation and usage of first stage retrievers, with code available in the "first_stage_retrievers" folder.        
-3. **Re-ranking** (BERT-based and Larage language model re-rankers): In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively re-rank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
+3. **reranking** (BERT-based and Larage language model rerankers): In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively rerank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
 
        
 Notes:
@@ -58,9 +58,9 @@ mple
 
 --- 
 
-# Re-ranking
+# reranking
 
-## Cross-encoder re-ranking
+## Cross-encoder reranking
 
 ### Training script
 
@@ -72,7 +72,7 @@ mple
 We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation set
 
 ---
-## Large language models as few-shot re-rankers for statute retrieval
+## Large language models as few-shot rerankers for statute retrieval
 
 ---
 
