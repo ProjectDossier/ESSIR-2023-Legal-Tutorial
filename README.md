@@ -19,7 +19,9 @@ To be more specific, we focus on TASK 1B, titled "Identifying relevant statutes"
 
 It is noteworthy to mention that our setup in cross-encoder re-ranking could be more fair if we had a sepearte test dataset. However, here, our objective is teaching students to implement and train mentioned methods.
 
+# Retrieval
 ## First stage Retrieval
+
 ### BM25 
 
 #### Experiments
@@ -35,6 +37,8 @@ It is noteworthy to mention that our setup in cross-encoder re-ranking could be 
 
 --- 
 
+# Re-ranking
+
 ## Cross-encoder re-ranking
 
 ### Training script
@@ -48,3 +52,14 @@ We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation
 
 ---
 ## Large language models as few-shot re-rankers for statute retrieval
+
+---
+
+## Evaluation table
+
+| Methode                           | Backbone      | P@1 | P@5 | P@10 | recall@10 | recall@100 | Map@100 |
+|-----------------------------------|---------------|-----|-----|------|-----------|------------|---------|
+| BM25                              | Elasticsearch | ~   |     |      |           |            |         |
+| Splade                            | BERT          |     |     |      |           |            |         |
+| BM25 + Cross-encoder (fine-tuned) | BERT          |     |     |      |           |            |         |
+| BM25 + LLM few-shot reranker      | Flan-T5       |     |     |      |           |            |         |
