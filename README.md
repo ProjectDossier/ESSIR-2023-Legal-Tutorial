@@ -13,6 +13,11 @@ In countries following the Common Law system (e.g., India, UK, Canada, Australia
 While working on a new case a legal practitioner often relies on these statutes and precedents to understand how the Court has discussed, argued and behaved in similar scenarios. This task is aimed at creating retrieval systems capable of addressing this problem
 
 ## Dataset
+We use the Artificial Intelligence for Legal Assistance (AILA) dataset, and focus on Task 1 - Precedent & Statute retrieval. AiILA is a series of shared tasks aimed at developing datasets and methods for solving variety of legal informatics problems.
+  
+To be more specific, we focus on TASK 1B, titled "Identifying relevant statutes" in a mutlti-stage setup. For first stage retrieval, we explore BM25 and Splade and for re-ranking on the top-k candidates retrieved by firs stage retriever, we use Large language models with few-shot in-context reasoninig where the number of training size is only two instance and we also fine-tune cross-encoders where the number of queries for training is 40 queries. We evaluate the re-ranker on ten qureies from the validation.
+
+It is noteworthy to mention that our setup in cross-encoder re-ranking could be more fair if we had a sepearte test dataset. However, here, our objective is teaching students to implement and train mentioned methods.
 
 ## First stage Retrieval
 ### BM25 
