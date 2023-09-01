@@ -4,7 +4,7 @@ Welcome to the repoistory of legal tutorial in ESSIR'23!
 
 In this tutorial, we will delve into the world of legal information retrieval, specifically focusing on the identification of relevant statutes given a brief description of a legal situation. This task is crucial for legal practitioners, as it enables them to access the written laws that may apply to their cases. We explore this subject in more detail in the following.
 
-## Task definition:
+## Task definition
 
 The primary objective of statute retrieval is to identify the relevant statutes (from the candidate documents) based on a concise description of a legal scenario (query).
 
