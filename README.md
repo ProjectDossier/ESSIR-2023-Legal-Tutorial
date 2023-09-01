@@ -29,8 +29,8 @@ It is important to note that while a separate test dataset would make our cross-
 
 Our tutorial is divided into several informative sessions:
 1. **Introduction to Legal Information Retrieval**: Presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/), this session provides an overview of legal information retrieval.        
-2. **First Stage Retrievers** (BM25 and Splade): Taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/, this session explores the implementation and usage of first stage retrievers, with code available in the "first_stage_retrievers" folder.        
-3. **reranking** (BERT-based and Larage language model rerankers): In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively rerank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
+2. **First Stage Retrievers with BM25 and Splade**: Taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/, this session explores the implementation and usage of first stage retrievers, with code available in the "first_stage_retrievers" folder.        
+3. **Reranking with BERT-based and Larage language models**: In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively rerank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
 
        
 Notes:
