@@ -8,9 +8,8 @@ The primary objective of statute retrieval is to identify the relevant statutes 
 
 ## Motivation
 In countries that adhere to the Common Law system (e.g., India, UK, Canada, Australia, and many others), two main sources of law exist:
-
-        1. Statutes which are the written laws
-        2. Precedents or judgements of prior cases delivered by a court, which involve similar legal facts and issues are the current case, but are not directly indicated in the written law
+1. Statutes which are the written laws
+2. Precedents or judgements of prior cases delivered by a court, which involve similar legal facts and issues are the current case, but are not directly indicated in the written law
 
 Legal practitioners frequently rely on statutes and precedents when working on new cases. These resources help them understand how the court has discussed, argued and decided similar scenarios. Our tutorial aims to provide preliminary information on developing retrieval systems that can address this critical need.
 
@@ -27,12 +26,9 @@ It is important to note that while a separate test dataset would make our cross-
 ## Tutorial plan
 
 Our tutorial is divided into several informative sessions:
-
-        1. Introduction to Legal Information Retrieval: Presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/), this session provides an overview of legal information retrieval.
-        
-        2. First Stage Retrievers (BM25 and Splade): Taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/, this session explores the implementation and usage of first stage retrievers, with code available in the "first_stage_retrievers" folder.
-        
-        3. Cross-Encoder Re-ranking: In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively re-rank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
+1. Introduction to Legal Information Retrieval: Presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/), this session provides an overview of legal information retrieval.        
+2. **First Stage Retrievers** (BM25 and Splade): Taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/, this session explores the implementation and usage of first stage retrievers, with code available in the "first_stage_retrievers" folder.        
+3. **Re-ranking** (BERT-based and Larage language model re-rankers): In the afternoon session, [Arian Askari](https://www.linkedin.com/in/arian-askari/) presents the process of fine-tuning and evaluating cross-encoder rerankers. This includes an investigation into how LLMs, particularly FLAN-T5, can effectively re-rank statutes based on a legal question with minimal provided examples. The implementation of the reranking stage is available in the "llms_transformers_rerankers" folder.
 
        
 Notes:
