@@ -84,12 +84,13 @@ We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation
 
 | Methode                           | Backbone      | P@1 | P@5 | P@10 | recall@10 | recall@100 | Map@100 |
 |-----------------------------------|---------------|-----|-----|------|-----------|------------|---------|
-| BM25                              | Elasticsearch | ~   |     |      |           |            |         |
+| BM25                              | Elasticsearch | .1200   |  .0480   |  .0380   |     .0860      |     .4373       |     .0605    |
 | Splade                            | BERT          |     |     |      |           |            |         |
 | BM25 + Cross-encoder (fine-tuned) | BERT          |     |     |      |           |            |         |
-| BM25 + LLM few-shot reranker      | Flan-T5       |     |     |      |           |            |         |
 
+BM25 + LLM few-shot reranker (Flan-T5): Try your prompt on [statute reranking notebook](https://github.com/ProjectDossier/ESSIR-2023-Legal-Tutorial/blob/main/llms_transformers_rerankers/solutions/3_statute_reranking_with_LLMs_solution.ipynb)  :)
 
+ 
 # Organizers
 
 [Arian Askari](https://www.linkedin.com/in/arian-askari/), PhD candiate from Leiden University
