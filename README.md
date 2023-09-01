@@ -19,7 +19,7 @@ To be more specific, we focus on TASK 1B, titled "Identifying relevant statutes"
 
 It is noteworthy to mention that our setup in cross-encoder re-ranking could be more fair if we had a sepearte test dataset. However, here, our objective is teaching students to implement and train mentioned methods.
 
-## Tutorail plan
+## Tutorial plan
 
 We started with an introduction to legal IR that presented by Sophia 
 
