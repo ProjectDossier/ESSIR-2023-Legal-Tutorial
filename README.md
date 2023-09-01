@@ -21,14 +21,18 @@ It is noteworthy to mention that our setup in cross-encoder re-ranking could be 
 
 ## Tutorial plan
 
-We started with an introduction to legal IR that presented by Sophia 
+We started our tutorial with an introduction to legal IR that presented by [Sophia Althammar](https://www.linkedin.com/in/sophia-althammer-2a93b6b9/) and [Alaa El-Ebshihy](https://www.linkedin.com/in/alaa-el-ebshihy/). Next, we practically investigated implementation of first stage retrievers (i.e., BM25 and Splade) that taught by [Tobias Fink](https://www.linkedin.com/in/tobias-fink-89b50a229/), and its implementation is available on "first_stage_retrievers" folders. Finally, in the afternoon session, [Arian Askari](https://www.linkedin.com/ /arian-askari/) presented how to fine-tune and evaluate cross-encoder reranker. In the era of LLMs, he then investigated how LLMs, particularly FLAN-T5 is able to address the task of re-ranking statues given legal question with only few-shot provided examples. The implementation of reranking stage is available on "llms_transformers_rerankers" folder.
 
+The slides of the presentation is available on "presentation" folder. 
+
+All of our tutorial could be run with Google Colab without access to premium account.
+<!--- 
 # Retrieval
 
 ## First stage Retrieval
 
 ### BM25 
-
+mple
 #### Experiments
 
 #### Results
@@ -59,6 +63,8 @@ We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation
 ## Large language models as few-shot re-rankers for statute retrieval
 
 ---
+
+--->
 
 ## Evaluation table
 
