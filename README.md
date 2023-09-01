@@ -82,6 +82,8 @@ We finetune legal BERT on 40 queries and evaluate it on 10 queries as evaluation
 
 ## Evaluation table
 
+Here is an overview of the evaluation metrics for the different retrieval methods we explore in this tutorial:
+
 | Methode                           | Backbone      | P@1 | P@5 | P@10 | recall@10 | recall@100 | Map@100 |
 |-----------------------------------|---------------|-----|-----|------|-----------|------------|---------|
 | BM25                              | Elasticsearch | .1200   |  .0480   |  .0380   |     .0860      |     .4373       |     .0605    |
