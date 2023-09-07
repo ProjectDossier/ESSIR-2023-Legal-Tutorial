@@ -35,7 +35,7 @@ Our tutorial is divided into several informative sessions:
        
 Notes:
 
-- You can check ut othe presentation slides in the "presentation" folder.
+- You can check out othe presentation slides in the "presentation" folder.
 
 - All of our tutorial could be run with Google Colab without access to premium account.
 
